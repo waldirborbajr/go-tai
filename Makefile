@@ -2,7 +2,7 @@
 .PHONY: build run logs execute
 
 # Get version from constants/constants.go
-VERSION := $(shell grep -oP 'Version = "\K(.*)(?=")' pkg/constants/constants.go)
+VERSION := $(shell grep -oP 'Version = "\K(.*)(?=")' internal/constants/constants.go)
 
 # Set IMAGE_NAME to the name of the directory containing the Makefile
 IMAGE_NAME := $(shell basename `pwd`)
