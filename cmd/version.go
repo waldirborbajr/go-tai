@@ -19,6 +19,6 @@ var versionCmd = &cobra.Command{
 	Long: `The version command provides information about the application's version.
 Use this command to check the current version of the application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("T.A.I CLI version %v\n", TaiVersion)
+		fmt.Printf("T.A.I  CLI version %v\n", TaiVersion)
 	},
 }

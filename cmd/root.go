@@ -20,7 +20,8 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.AddCommand(version)
+	rootCmd.AddCommand(versionCmd)
+	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 	// rootCmd.AddCommand(addCmd)
 	// rootCmd.AddCommand(removeCmd)
 	// rootCmd.AddCommand(doneCmd)
